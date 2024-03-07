@@ -1,0 +1,48 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.artistas {
+    background-color: v.$negro;
+    padding: 5rem 0;
+
+    h2 {
+        text-align: center;
+        color: v.$dorado;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    
+    h3 {
+        color: v.$blanco;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+        text-transform: uppercase;
+        padding: 2rem 0 1.5rem 0;
+    }
+
+}
+
+.dia{
+    @include m.tablet {
+        @include m.grid(3, 5rem)
+    } 
+}
+
+.artista{
+    box-shadow: 0px 1px 3px 0px rgba(181,181,181,1);
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+
+    h2 {
+        margin: 0;
+        padding: 2rem 0;
+        font-size: 2rem;
+        color: v.$grisClaro;
+    }
+
+    img {
+        border-radius: 1rem 1rem 0 0;
+        height: 25rem;
+    }
+}

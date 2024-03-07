@@ -1,0 +1,28 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.footer {
+    background-color: v.$grisOscuro;
+    padding: 2rem 0;
+    h2 {
+        color: v.$blanco;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+
+        @include m.tablet {
+            margin-bottom: 2rem;
+            padding: 1rem 0;
+        }
+
+        span {
+            color: v.$dorado;
+        }
+    }
+
+    p {
+        text-align: center;
+        color: v.$blanco;
+        margin-bottom: 0;
+    }
+}
